@@ -1,0 +1,31 @@
+# ============================================================
+#  answers/  ——  通用模板
+# ------------------------------------------------------------
+#  入库（这些让 CodeArts / cjpm 认出这是一个工程）：
+#      default/cjpm.toml       cjpm 工程清单（识别工程的根本）
+#      default/cjpm.lock       依赖锁定
+#      default/.arts/          CodeArts 工程与调试配置
+#                              （launch.json 里的 "project": "Cangjie" 是关键标记）
+#      default/.vscode/        cjpm 构建参数
+#      default/src/.gitkeep    占位文件，保证 src/ 目录克隆后仍然存在
+#      README.md  .gitignore
+#
+#  不入库（个人产物 / 编译产物 / 缓存）：
+#      所有 .cj  所有 .exe/.cjo/.obj   .cache/   target/
+#
+#  规则放在本目录，对 answers/ 及其所有子目录递归生效，
+#  所以不需要在每个子目录里再放一份 .gitignore。
+# ============================================================
+
+# ── 个人解题产物 ──
+*.cj
+
+# ── 编译产物 ──
+*.exe
+*.cjo
+*.obj
+*.pdb
+
+# ── 缓存与构建目录 ──
+.cache/
+target/
