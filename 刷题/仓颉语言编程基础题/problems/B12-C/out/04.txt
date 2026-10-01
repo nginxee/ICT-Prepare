@@ -1,0 +1,4 @@
+name=hi
+nick=bye
+nickLen=3
+hasNick=true

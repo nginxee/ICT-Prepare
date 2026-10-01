@@ -1,0 +1,4 @@
+3
+book a 1
+toy b 100
+book c 999

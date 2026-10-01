@@ -1,0 +1,3 @@
+rect area=0
+square area=0
+total=0

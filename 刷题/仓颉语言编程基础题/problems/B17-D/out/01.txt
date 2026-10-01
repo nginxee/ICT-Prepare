@@ -1,0 +1,5 @@
+words=3
+max=2
+a 2
+m 1
+z 2

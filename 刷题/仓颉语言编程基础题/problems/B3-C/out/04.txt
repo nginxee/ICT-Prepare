@@ -1,0 +1,7 @@
+and=0
+or=129
+xor=129
+not=-129
+shl=2048
+shr=8
+packed=32769

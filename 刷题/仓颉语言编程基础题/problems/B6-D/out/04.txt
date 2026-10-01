@@ -1,0 +1,6 @@
+x 1 FAIL
+y 2 FAIL
+z 100 PASS
+w 100 PASS
+avg=50.75
+stats=pass=2,sum=203,best=100

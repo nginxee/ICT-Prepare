@@ -1,0 +1,4 @@
+raw=9
+pair q -> -5
+pair w -> 0
+sum=-5

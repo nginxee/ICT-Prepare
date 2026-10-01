@@ -1,0 +1,4 @@
+sub0 dir
+sub1 file
+sub2 file
+files=2 dirs=1 totalBytes=3

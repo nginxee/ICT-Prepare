@@ -1,0 +1,7 @@
+set p -5
+skip 2
+skip 2
+ok=1
+err=2
+sum=-5
+cleaned=true

@@ -1,0 +1,5 @@
+error 1 a
+error 2 b
+error 2 c
+ok d 99
+e1=1 e2=2

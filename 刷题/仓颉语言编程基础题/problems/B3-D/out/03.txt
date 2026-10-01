@@ -1,0 +1,11 @@
+prec1=13
+prec2=20
+prec3=112
+prec4=3
+quot=0
+rem=7
+cond=false
+mixed=10
+asFloat=7.0
+ratio=0.875
+acc=25

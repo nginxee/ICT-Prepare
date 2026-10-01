@@ -1,0 +1,4 @@
+q 60 PASS
+w 60 PASS
+avg=60.00
+stats=pass=2,sum=120,best=60

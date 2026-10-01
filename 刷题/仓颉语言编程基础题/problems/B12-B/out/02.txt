@@ -1,0 +1,2 @@
+shape=RECT
+area=1

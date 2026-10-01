@@ -1,0 +1,4 @@
+p ABSENT
+q ABSENT
+p=ABSENT
+pass=0

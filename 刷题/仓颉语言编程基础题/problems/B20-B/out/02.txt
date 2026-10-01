@@ -1,0 +1,3 @@
+final=40000
+checksum=799980000
+threads=8

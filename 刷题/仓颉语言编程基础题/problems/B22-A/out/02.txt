@@ -1,0 +1,4 @@
+members=price,stock,title
+title=a
+stock=1
+stock2=2

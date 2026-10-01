@@ -1,0 +1,6 @@
+ceil=7.0
+floor=6.0
+round=6.0
+sqrt=2.50
+abs=2.25
+pi=12.5664

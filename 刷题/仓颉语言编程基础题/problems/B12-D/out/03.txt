@@ -1,0 +1,9 @@
+a B
+b C
+c A
+d ABSENT
+a=B
+b=C
+c=A
+d=ABSENT
+pass=2
