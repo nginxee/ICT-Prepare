@@ -25,7 +25,7 @@ answers\default\src\L7-E.cj
 带参数也可以：
 
 ```
-judge.cmd -Level 7
+自助判题.cmd -Level 7
 judge.cmd -Problem L7-A
 ```
 

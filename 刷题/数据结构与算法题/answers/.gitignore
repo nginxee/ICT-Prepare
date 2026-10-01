@@ -4,14 +4,15 @@
 #  入库（这些让 CodeArts / cjpm 认出这是一个工程）：
 #      default/cjpm.toml       cjpm 工程清单（识别工程的根本）
 #      default/cjpm.lock       依赖锁定
-#      default/.arts/          CodeArts 工程与调试配置
-#                              （launch.json 里的 "project": "Cangjie" 是关键标记）
+#      default/.arts/launch.json   CodeArts 工程与调试配置
+#                                  （里面的 "project": "Cangjie" 是关键标记）
 #      default/.vscode/        cjpm 构建参数
 #      default/src/.gitkeep    占位文件，保证 src/ 目录克隆后仍然存在
 #      README.md  .gitignore
 #
-#  不入库（个人产物 / 编译产物 / 缓存）：
+#  不入库（个人产物 / 编译产物 / 缓存 / 本机专有配置）：
 #      所有 .cj  所有 .exe/.cjo/.obj   .cache/   target/
+#      default/.arts/settings.json
 #
 #  规则放在本目录，对 answers/ 及其所有子目录递归生效，
 #  所以不需要在每个子目录里再放一份 .gitignore。
@@ -29,3 +30,10 @@
 # ── 缓存与构建目录 ──
 .cache/
 target/
+
+# ── 本机专有配置 ──
+# CodeArts 自动生成的 .arts/settings.json 里塞着本机绝对路径
+# （CANGJIE_HOME、以及 C:\Users\<你的用户名>\.cjpm\bin），换机器必然失效，
+# 所以不入库。工程识别靠的是同目录的 launch.json（那个要保留）。
+# 本地文件仍在，不影响你自己用 CodeArts 打开。
+default/.arts/settings.json

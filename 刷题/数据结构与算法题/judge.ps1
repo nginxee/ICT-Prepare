@@ -8,13 +8,22 @@
   file loses its BOM. All Chinese UI text therefore lives in messages.json and
   is read with an EXPLICIT UTF-8 decoder, which no codepage setting can break.
 
-  Usage (run from Desktop\ICT):
-      ict-oj\judge.cmd -Level 1
-      ict-oj\judge.cmd -Level 2
-      ict-oj\judge.cmd -Problem L1-A
-      ict-oj\judge.cmd -Problem L1-A -ShowInput
+  Usage
+  -----
+  Just double-click the launcher (.cmd) that sits next to this script -- it
+  prompts for a level number and passes everything through. Or drive it from
+  a command line, from this script's own folder:
 
-  Answers live in ict-oj/answers/<problem-id>.cj
+      <launcher>.cmd -Level 1
+      <launcher>.cmd -Level 2
+      <launcher>.cmd -Problem L1-A
+      <launcher>.cmd -Problem L1-A -ShowInput
+
+  This script locates everything relative to its OWN location, so it works
+  from any working directory and after the folder is moved or renamed.
+
+  Answers live in answers/<problem-id>.cj
+  Drafts in answers/default/src/*.cj are synced into answers/ before judging.
 #>
 param(
     [string]$Problem,
@@ -41,7 +50,7 @@ $ErrorActionPreference = 'Stop'
 $OjRoot    = Split-Path -Parent $MyInvocation.MyCommand.Path
 $ProbRoot  = Join-Path $OjRoot 'problems'
 $AnsRoot   = Join-Path $OjRoot 'answers'
-$BuildRoot = Join-Path ([System.IO.Path]::GetTempPath()) 'ict-oj-build'
+$BuildRoot = Join-Path ([System.IO.Path]::GetTempPath()) 'cj-judge-build'
 if (-not (Test-Path $BuildRoot)) { New-Item -ItemType Directory -Path $BuildRoot -Force | Out-Null }
 
 $CjcExe = (Get-Command cjc -ErrorAction SilentlyContinue).Source
@@ -80,8 +89,8 @@ $Fallback = @{
     allPass            = '  -> all cases passed'
     notPass            = '  -> problem NOT passed. fix and re-run.'
     usageTitle         = 'Usage:'
-    usageLine1         = '  judge.cmd            (double-click works too: interactive)'
-    usageLine2         = '  judge.cmd -Level 7   or   judge.cmd -Problem L7-A'
+    usageLine1         = '  <launcher>.cmd        (double-click works too: interactive)'
+    usageLine2         = '  <launcher>.cmd -Level 7   or   <launcher>.cmd -Problem L7-A'
     noProblemsInLevel  = 'no problems found under level {0}.'
     summary            = '  SUMMARY: {0} passed / {1} not passed'
     askLevel           = 'Level number (e.g. 7), or problem id (e.g. L7-E), a = all; Enter = quit > '
@@ -92,6 +101,9 @@ $Fallback = @{
     srcEmpty           = '  (no .cj files in answers\default\src, sync skipped)'
     badInput           = '  unrecognised "{0}" -- enter 7 / L7-E / a.'
     noProblemsAtAll    = '  no problems found.'
+    noCjc1             = 'x cjc not found -- the Cangjie compiler is missing, or not on PATH.'
+    noCjc2             = '  Install it, confirm that "cjc -v" prints a version, then re-run.'
+    noCjc3             = '  (Judging compiles your .cj with cjc; without it nothing can be judged.)'
     bye                = '  bye.'
 }
 
@@ -376,6 +388,23 @@ function Read-Reply {
     Write-Host ''
     Write-Host $Prompt -ForegroundColor Cyan -NoNewline
     try { return [Console]::ReadLine() } catch { return $null }
+}
+
+# --------------------------------------------------------------------------
+# Fail fast and clearly when the Cangjie compiler is unavailable.
+#
+# On a machine without Cangjie, Start-Process used to throw a raw .NET
+# exception ("The system cannot find the file specified"), which tells the
+# user nothing about what is actually wrong or what to do. Checked here so
+# both the CLI and the interactive path behave the same way.
+# --------------------------------------------------------------------------
+if (-not (Get-Command cjc -ErrorAction SilentlyContinue)) {
+    Write-Host ''
+    Write-Host (T 'noCjc1') -ForegroundColor Red
+    Write-Host (T 'noCjc2') -ForegroundColor Yellow
+    Write-Host (T 'noCjc3') -ForegroundColor DarkGray
+    Write-Host ''
+    exit 3
 }
 
 # --------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-# 题目索引
+﻿# 题目索引
 
 | 题号 | 标题 | 关卡 |
 |---|---|---|
@@ -31,9 +31,9 @@
 
 共 26 题。
 
-## 运行（在 `Desktop\ICT` 目录下执行）
+## 运行（在 `刷题\数据结构与算法题` 目录下执行）
 
 ```
-ict-oj\judge.cmd -Level 7   # 关卡七 新概念
-ict-oj\judge.cmd -Problem L7-A
+自助判题.cmd -Level 7   # 关卡七 新概念
+自助判题.cmd -Problem L7-A
 ```

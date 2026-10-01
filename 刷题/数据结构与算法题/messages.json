@@ -21,8 +21,8 @@
   "allPass": "  → 本题全部用例通过 ✔",
   "notPass": "  → 本题未通过。修完重跑。",
   "usageTitle": "用法（在 刷题 目录下执行）：",
-  "usageLine1": "  judge.cmd                              （双击也行：交互式输入关卡号）",
-  "usageLine2": "  judge.cmd -Level 7   或   judge.cmd -Problem L7-A",
+  "usageLine1": "  自助判题.cmd                              （双击也行：交互式输入关卡号）",
+  "usageLine2": "  自助判题.cmd -Level 7   或   自助判题.cmd -Problem L7-A",
   "noProblemsInLevel": "关卡 {0} 下没有题目。",
   "summary": "  汇总：通过 {0} 题 / 未通过 {1} 题",
 
@@ -34,5 +34,8 @@
   "srcEmpty": "  （answers\\default\\src 里没有 .cj 文件，跳过同步）",
   "badInput": "  无法识别「{0}」—— 请输入 7 / L7-E / a。",
   "noProblemsAtAll": "  没有找到任何题目。",
+  "noCjc1": "✗ 找不到 cjc —— 这台机器上没装仓颉编译器，或者它不在 PATH 里。",
+  "noCjc2": "  装好后先确认 `cjc -v` 能打印版本号，再回来跑判题。",
+  "noCjc3": "  （判题要用 cjc 编译你的 .cj，没有它连一道题都判不了）",
   "bye": "  退出。"
 }
