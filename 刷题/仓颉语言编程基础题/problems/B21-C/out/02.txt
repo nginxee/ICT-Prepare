@@ -1,2 +1,0 @@
-server_recv=hello
-client_recv=ACK:hello

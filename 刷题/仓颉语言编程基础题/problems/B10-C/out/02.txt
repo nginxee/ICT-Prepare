@@ -1,2 +1,0 @@
-square s=1000 area=1000000
-rect=0 square=1 rectWidth=0

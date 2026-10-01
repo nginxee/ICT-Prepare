@@ -1,5 +1,0 @@
-sorted=true
-inRange=true
-allEqual=true
-hasZero=true
-strictMax=false

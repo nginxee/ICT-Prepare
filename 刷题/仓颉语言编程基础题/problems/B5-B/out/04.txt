@@ -1,4 +1,0 @@
-square=1 的平方是 1
-sum=1 + -1 = 0
-word=ab
-upper=AB

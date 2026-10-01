@@ -1,5 +1,0 @@
-a 60 D
-b 59 F
-average=59
-top=a 60
-pass=1

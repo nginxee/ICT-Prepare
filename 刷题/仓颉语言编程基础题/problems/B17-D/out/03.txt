@@ -1,4 +1,0 @@
-words=2
-max=3
-aa 1
-bb 3

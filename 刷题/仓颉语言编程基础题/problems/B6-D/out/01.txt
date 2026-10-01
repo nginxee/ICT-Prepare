@@ -1,5 +1,0 @@
-a 20 FAIL
-b 70 PASS
-c 100 PASS
-avg=63.33
-stats=pass=2,sum=190,best=100

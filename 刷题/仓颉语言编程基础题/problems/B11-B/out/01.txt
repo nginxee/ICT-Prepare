@@ -1,3 +1,0 @@
-card fee=0 total=99
-card fee=1 total=101
-feeSum=1

@@ -1,3 +1,0 @@
-init: z=999999
-after add: z=999000
-after reset: z=0

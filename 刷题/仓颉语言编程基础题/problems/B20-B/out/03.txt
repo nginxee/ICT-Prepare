@@ -1,3 +1,0 @@
-final=8
-checksum=28
-threads=8

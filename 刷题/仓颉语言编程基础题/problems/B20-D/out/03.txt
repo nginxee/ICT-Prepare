@@ -1,4 +1,0 @@
-main=999
-thread 1 1000
-sum=1000
-mainAfter=999

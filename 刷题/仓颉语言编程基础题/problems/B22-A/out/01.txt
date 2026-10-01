@@ -1,4 +1,0 @@
-members=price,stock,title
-title=book
-stock=1000
-stock2=1001

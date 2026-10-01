@@ -1,3 +1,0 @@
-error amount
-error amount
-balance=0

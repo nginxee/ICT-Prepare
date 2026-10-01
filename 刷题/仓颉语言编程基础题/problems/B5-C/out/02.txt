@@ -1,3 +1,0 @@
-fact=1
-fib=0
-gcd=0

@@ -1,2 +1,0 @@
-action=STOP
-seconds=30

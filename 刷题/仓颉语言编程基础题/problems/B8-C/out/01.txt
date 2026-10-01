@@ -1,6 +1,0 @@
-chars=1
-bytes=1
-x=1
-pos=-1
-replaced=x
-trimmed=x

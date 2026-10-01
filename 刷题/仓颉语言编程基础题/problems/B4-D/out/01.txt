@@ -1,3 +1,0 @@
-first=1
-count=1
-sum=1

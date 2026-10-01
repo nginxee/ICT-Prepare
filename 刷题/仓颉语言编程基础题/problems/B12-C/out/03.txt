@@ -1,4 +1,0 @@
-name=zz
-nick=z
-nickLen=1
-hasNick=true

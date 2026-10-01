@@ -1,6 +1,0 @@
-first=62
-last=24
-min=0
-max=97
-sum=9857
-avg=49.28

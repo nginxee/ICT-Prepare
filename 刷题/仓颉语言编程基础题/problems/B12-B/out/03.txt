@@ -1,2 +1,0 @@
-shape=SQUARE
-area=1000000

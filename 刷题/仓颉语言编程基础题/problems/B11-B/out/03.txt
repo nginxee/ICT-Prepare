@@ -1,2 +1,0 @@
-card fee=10000 total=1010000
-feeSum=10000

@@ -1,6 +1,0 @@
-book:x price=900000 tax=45000 net=945000
-toy:y price=1000000 tax=100000 net=1100000
-book:z price=4 tax=0 net=4
-toy:w price=7 tax=0 net=7
-sum=2045011
-tags=[x-book][y-toy][z-book][w-toy]

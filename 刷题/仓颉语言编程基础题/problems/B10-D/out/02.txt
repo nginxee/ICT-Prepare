@@ -1,6 +1,0 @@
-p pay=5
-q pay=6
-r pay=7
-total=18
-mgr=0
-commission=0

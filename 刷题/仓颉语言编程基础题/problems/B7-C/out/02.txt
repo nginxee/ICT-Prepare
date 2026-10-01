@@ -1,4 +1,0 @@
-x=2 abs=2 sqrt=1.414
-x=-3 abs=3 sqrt=1.732
-sumAbs=5
-maxAbs=3

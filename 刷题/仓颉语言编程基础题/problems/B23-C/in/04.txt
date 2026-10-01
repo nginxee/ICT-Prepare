@@ -1,6 +1,0 @@
-5
-add a x 50
-add b x 60
-add c y 70
-report
-top x

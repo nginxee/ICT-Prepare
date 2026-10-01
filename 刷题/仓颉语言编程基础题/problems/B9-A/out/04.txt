@@ -1,3 +1,0 @@
-init: b=1000000
-after add: b=0
-after reset: b=0

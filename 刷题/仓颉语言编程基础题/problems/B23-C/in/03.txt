@@ -1,4 +1,0 @@
-3
-del q math
-add q math 0
-top q

@@ -1,3 +1,0 @@
-miss q math
-add q math 0
-top q none

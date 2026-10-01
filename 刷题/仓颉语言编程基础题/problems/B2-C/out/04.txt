@@ -1,3 +1,0 @@
-chars=3
-bytes=7
-upper=中A文

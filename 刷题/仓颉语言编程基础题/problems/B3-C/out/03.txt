@@ -1,7 +1,0 @@
-and=0
-or=255
-xor=255
-not=-171
-shl=340
-shr=85
-packed=43605

@@ -1,6 +1,0 @@
-add a x 50
-add b x 60
-add c y 70
-report x count=2 sum=110
-report y count=1 sum=70
-top x b 60

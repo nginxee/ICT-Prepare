@@ -1,3 +1,0 @@
-chars=1
-bytes=1
-upper=A

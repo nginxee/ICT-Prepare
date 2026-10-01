@@ -1,2 +1,0 @@
-folds=2
-thickness=4

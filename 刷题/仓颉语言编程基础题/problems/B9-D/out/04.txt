@@ -1,6 +1,0 @@
-x 100 A
-y 100 A
-z 100 A
-average=100
-top=x 100
-pass=3

@@ -1,3 +1,0 @@
-counter=2000
-threads=2
-consistent=true

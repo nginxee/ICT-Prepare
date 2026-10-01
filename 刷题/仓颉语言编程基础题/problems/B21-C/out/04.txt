@@ -1,2 +1,0 @@
-server_recv=abcdefghij
-client_recv=ACK:abcdefghij

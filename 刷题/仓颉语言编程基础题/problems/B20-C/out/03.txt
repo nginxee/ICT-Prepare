@@ -1,3 +1,0 @@
-counter=16
-threads=8
-consistent=true

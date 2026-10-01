@@ -1,4 +1,0 @@
-count=2
-1: qqqqq
-2: w
-bytes=8

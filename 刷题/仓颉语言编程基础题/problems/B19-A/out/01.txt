@@ -1,5 +1,0 @@
-ok 0
-ok 7
-ok 0
-bad xyz
-done 4

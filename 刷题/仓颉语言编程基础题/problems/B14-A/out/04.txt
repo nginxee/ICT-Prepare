@@ -1,3 +1,0 @@
-double=-200
-square=10000
-neg=100

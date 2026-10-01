@@ -1,4 +1,0 @@
-3
-A ok
-B boom
-C ok

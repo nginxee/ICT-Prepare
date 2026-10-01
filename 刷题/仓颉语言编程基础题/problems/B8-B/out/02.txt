@@ -1,6 +1,0 @@
-first=94
-last=94
-min=94
-max=94
-sum=94
-avg=94.00

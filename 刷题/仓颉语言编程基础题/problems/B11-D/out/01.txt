@@ -1,5 +1,0 @@
-book:a price=0 tax=0 net=0
-toy:b price=100 tax=10 net=110
-book:c price=899 tax=44 net=943
-sum=1053
-tags=[a-book][b-toy][c-book]

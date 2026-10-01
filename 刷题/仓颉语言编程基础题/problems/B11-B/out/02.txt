@@ -1,4 +1,0 @@
-wallet fee=2 total=3
-wallet fee=2 total=4
-wallet fee=2 total=5
-feeSum=6

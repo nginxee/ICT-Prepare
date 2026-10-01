@@ -1,2 +1,0 @@
-grade=B
-pass=true

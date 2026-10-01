@@ -1,6 +1,0 @@
-size=1
-first=-1000000
-last=-1000000
-mid=none
-has=true
-sorted=-1000000

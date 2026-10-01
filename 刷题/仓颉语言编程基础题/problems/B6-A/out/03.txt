@@ -1,2 +1,0 @@
-w=1 h=2 area=2 perimeter=6
-w=999 h=1 area=999 perimeter=2000

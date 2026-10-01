@@ -1,5 +1,0 @@
-x=-1 abs=1 sqrt=1.000
-x=-25 abs=25 sqrt=5.000
-x=1000000 abs=1000000 sqrt=1000.000
-sumAbs=1000026
-maxAbs=1000000

@@ -1,4 +1,0 @@
-square area=1
-square area=4
-rect area=0
-total=5

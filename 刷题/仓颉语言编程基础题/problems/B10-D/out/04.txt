@@ -1,5 +1,0 @@
-MGR a pay=2
-b pay=2
-total=4
-mgr=1
-commission=1

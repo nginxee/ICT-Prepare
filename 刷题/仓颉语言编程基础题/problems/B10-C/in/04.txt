@@ -1,3 +1,0 @@
-2
-square 0
-square 0

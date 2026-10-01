@@ -1,3 +1,0 @@
-rect area=1000000
-square area=1000000
-total=2000000

@@ -1,3 +1,0 @@
-count=1
-total=5000
-report=count=1,total=5000,limit=1000

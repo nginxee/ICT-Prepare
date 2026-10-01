@@ -1,6 +1,0 @@
-count=3
-total=300
-avg=100
-pass=3
-best=x
-list=x:100,y:100,z:100

@@ -1,3 +1,0 @@
-2
-zz aaa 60
-zz bbb 60

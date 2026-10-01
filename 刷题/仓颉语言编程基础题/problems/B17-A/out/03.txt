@@ -1,6 +1,0 @@
-size=4
-first=7
-last=7
-mid=7,7
-has=true
-sorted=7,7,7,7

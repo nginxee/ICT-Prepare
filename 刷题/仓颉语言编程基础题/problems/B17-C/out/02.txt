@@ -1,3 +1,0 @@
-distinct=2
-sorted=-1 0
-has=true

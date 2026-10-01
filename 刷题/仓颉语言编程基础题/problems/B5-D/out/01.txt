@@ -1,6 +1,0 @@
-once=1
-repeat=1
-shadow=7
-global=100
-sumTo=1
-final=109

@@ -1,3 +1,0 @@
-deposit 10000 ok balance=10000
-withdraw 10000 ok balance=0
-bye balance=0

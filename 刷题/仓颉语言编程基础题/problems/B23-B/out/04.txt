@@ -1,6 +1,0 @@
-count=2
-total=100
-avg=50
-pass=1
-best=p
-list=p:99,q:1

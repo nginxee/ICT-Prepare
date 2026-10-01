@@ -1,3 +1,0 @@
-double=-8
-square=16
-neg=4

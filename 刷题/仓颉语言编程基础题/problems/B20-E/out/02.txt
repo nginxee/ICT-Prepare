@@ -1,5 +1,0 @@
-total=63
-after=378
-workers=6
-stage1sum=63
-consistent=true

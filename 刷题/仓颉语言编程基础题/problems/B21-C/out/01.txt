@@ -1,2 +1,0 @@
-server_recv=a
-client_recv=ACK:a

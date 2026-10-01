@@ -1,6 +1,0 @@
-chars=10
-bytes=10
-x=0
-pos=-1
-replaced=  spaced
-trimmed=spaced

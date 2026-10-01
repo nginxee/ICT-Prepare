@@ -1,5 +1,0 @@
-set q 0
-ok=1
-err=0
-sum=0
-cleaned=true

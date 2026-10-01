@@ -1,3 +1,0 @@
-0: NUM 5
-ints=1 sum=5 words=0
-longest=none

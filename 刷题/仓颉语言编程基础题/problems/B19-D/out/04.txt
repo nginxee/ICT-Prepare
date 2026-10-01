@@ -1,6 +1,0 @@
-set m 100
-set n 0
-ok=2
-err=0
-sum=100
-cleaned=true

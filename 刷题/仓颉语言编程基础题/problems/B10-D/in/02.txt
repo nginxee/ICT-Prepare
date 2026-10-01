@@ -1,4 +1,0 @@
-3
-base p 5
-base q 6
-base r 7

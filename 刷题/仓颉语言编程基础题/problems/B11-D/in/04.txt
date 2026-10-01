@@ -1,5 +1,0 @@
-4
-book x 1000000
-toy y 1000000
-book z 5
-toy w 7

@@ -1,5 +1,0 @@
-add zoe art 70
-add ann art 70
-top art ann 70
-del ann art
-top art zoe 70

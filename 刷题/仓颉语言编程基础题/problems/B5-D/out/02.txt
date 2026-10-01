@@ -1,6 +1,0 @@
-once=300
-repeat=24300
-shadow=107
-global=100
-sumTo=15
-final=24522

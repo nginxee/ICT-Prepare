@@ -1,5 +1,0 @@
-raw=12
-pair x -> 1
-pair y -> 2
-pair z -> 3
-sum=6

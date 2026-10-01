@@ -1,5 +1,0 @@
-sum=(2,2)
-neg=(-2,-2)
-scaled=(4,4)
-shifted=(6,6)
-origin=(2,2)

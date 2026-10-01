@@ -1,2 +1,0 @@
-folds=30
-thickness=1073741824

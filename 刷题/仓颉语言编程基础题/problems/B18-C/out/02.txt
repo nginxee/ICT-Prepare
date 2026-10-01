@@ -1,3 +1,0 @@
-raw=7
-pair aa -> 100
-sum=100

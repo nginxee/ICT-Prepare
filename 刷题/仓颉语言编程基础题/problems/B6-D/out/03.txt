@@ -1,3 +1,0 @@
-zz 100 PASS
-avg=100.00
-stats=pass=1,sum=100,best=100

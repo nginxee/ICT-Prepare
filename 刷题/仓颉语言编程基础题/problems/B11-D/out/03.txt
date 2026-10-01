@@ -1,4 +1,0 @@
-toy:a price=0 tax=0 net=0
-book:b price=0 tax=0 net=0
-sum=0
-tags=[a-toy][b-book]

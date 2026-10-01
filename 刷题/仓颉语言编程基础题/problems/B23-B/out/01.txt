@@ -1,6 +1,0 @@
-count=1
-total=0
-avg=0
-pass=0
-best=a
-list=a:0

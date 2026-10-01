@@ -1,5 +1,0 @@
-1: 9
-2: 16
-sum=25
-cancelled=3
-first=Some(9)

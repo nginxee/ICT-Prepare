@@ -1,6 +1,0 @@
-add a math 100
-add a art 100
-report art count=1 sum=100
-report math count=1 sum=100
-report art count=1 sum=100
-report math count=1 sum=100

@@ -1,8 +1,0 @@
-file=all.txt
-ext=txt
-lines=2
-pass=0
-fail=2
-total=0
-failBytes=8
-cleaned=true

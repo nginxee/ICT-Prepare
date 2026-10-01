@@ -1,6 +1,0 @@
-abc..... 100 A
-def..... 18 D
-ghi..... 67 C
-top=abc
-avg=61.67
-spread=38.33

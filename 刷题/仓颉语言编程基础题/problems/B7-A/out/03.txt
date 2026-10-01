@@ -1,3 +1,0 @@
-name=q count=0
-name=w count=0
-total=0

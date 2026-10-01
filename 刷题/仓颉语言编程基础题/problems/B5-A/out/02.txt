@@ -1,3 +1,0 @@
-max=1
-absSum=2
-bothEven=false

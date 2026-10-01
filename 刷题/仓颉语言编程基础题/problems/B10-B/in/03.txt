@@ -1,4 +1,0 @@
-3
-square 1
-square 2
-rect 0 5

@@ -1,4 +1,0 @@
-members=price,stock,title
-title=zz
-stock=7
-stock2=8

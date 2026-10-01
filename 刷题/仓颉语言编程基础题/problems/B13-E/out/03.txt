@@ -1,7 +1,0 @@
-0: NUM 1
-1: NUM 2
-2: NUM 3
-3: WORD hello
-4: WORD world
-ints=3 sum=6 words=2
-longest=hello

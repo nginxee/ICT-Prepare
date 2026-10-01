@@ -1,3 +1,0 @@
-square s=0 area=0
-square s=0 area=0
-rect=0 square=2 rectWidth=0

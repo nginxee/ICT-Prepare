@@ -1,4 +1,0 @@
-3
-deposit 0
-withdraw -5
-balance

@@ -1,3 +1,0 @@
-raw=9
-pair zzz -> 9999
-sum=9999

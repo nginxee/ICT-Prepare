@@ -1,6 +1,0 @@
-size=5
-first=1
-last=5
-mid=2,3,4
-has=true
-sorted=1,2,3,4,5

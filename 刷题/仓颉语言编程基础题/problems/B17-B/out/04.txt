@@ -1,4 +1,0 @@
-count=2
-sum=0
-first=-1000000
-has=true

@@ -1,3 +1,0 @@
-2
-mgr a 1 1
-sales b 1 1

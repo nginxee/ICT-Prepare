@@ -1,7 +1,0 @@
-1: 1
-2: 0
-3: 4
-4: 100
-sum=105
-cancelled=10
-first=Some(1)

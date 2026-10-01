@@ -1,7 +1,0 @@
-main=999
-thread 1 0
-thread 2 0
-thread 3 0
-thread 4 0
-sum=0
-mainAfter=999
