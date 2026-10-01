@@ -293,7 +293,9 @@ function Test-Problem([string]$probId, [string]$srcPath) {
             Write-Host (T 'stderrLabel') -ForegroundColor DarkYellow
             Write-Host ("      " + $r.Err.TrimEnd().Replace("`n", "`n      ")) -ForegroundColor DarkYellow
         }
-        if ($r.ExitCode -ne 0) {
+        # $null -ne 0 is TRUE in PowerShell, so the old check printed this line
+        # (with an empty value) even on a clean run. Only report a real non-zero code.
+        if ($null -ne $r.ExitCode -and $r.ExitCode -ne 0) {
             Write-Host ((T 'exitCode') -f $r.ExitCode) -ForegroundColor DarkYellow
         }
         Show-Diff -expected $exp -got $got
