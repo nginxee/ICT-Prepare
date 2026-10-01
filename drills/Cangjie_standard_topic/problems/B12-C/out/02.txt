@@ -1,0 +1,4 @@
+name=abc
+nick=defghij
+nickLen=7
+hasNick=true

@@ -1,0 +1,6 @@
+main=999
+thread 1 10
+thread 2 20
+thread 3 30
+sum=60
+mainAfter=999

@@ -1,0 +1,6 @@
+a pay=2000000
+MGR b pay=2000000
+c pay=3
+total=4000003
+mgr=1
+commission=1000002

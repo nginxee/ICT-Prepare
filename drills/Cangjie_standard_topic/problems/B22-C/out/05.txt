@@ -1,0 +1,4 @@
+tokens=5
+lparen=0
+add=0
+mul=2

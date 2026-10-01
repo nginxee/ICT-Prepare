@@ -1,0 +1,3 @@
+book:q price=8 tax=0 net=8
+sum=8
+tags=[q-book]

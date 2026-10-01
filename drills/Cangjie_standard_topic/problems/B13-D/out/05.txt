@@ -1,0 +1,5 @@
+0 NUM(0)
+1 PLUS
+2 OTHER(zz)
+3 STAR
+4 NUM(-1)

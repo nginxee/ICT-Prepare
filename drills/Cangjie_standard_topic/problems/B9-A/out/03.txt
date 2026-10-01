@@ -1,0 +1,3 @@
+init: q=0
+after add: q=0
+after reset: q=0

@@ -293,5 +293,5 @@
 |---|---|
 | `ICT备赛计划.md` | 本文（权威计划） |
 | `logs/` | 各阶段课件与说明 |
-| `刷题/数据结构与算法题/` | 题库 + 判题 harness（双击 `自助判题.cmd` 启动） |
-| `刷题/数据结构与算法题/problems/INDEX.md` | 题目总表 |
+| `drills/DSA_Advanced_topic/` | 题库 + 判题 harness（双击 `自助判题.cmd` 启动） |
+| `drills/DSA_Advanced_topic/problems/INDEX.md` | 题目总表 |

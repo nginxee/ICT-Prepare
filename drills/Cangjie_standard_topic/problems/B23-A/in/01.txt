@@ -1,0 +1,4 @@
+3
+deposit 10000
+withdraw 10000
+quit

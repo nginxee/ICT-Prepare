@@ -1,0 +1,3 @@
+2
+toy a 0
+book b 0

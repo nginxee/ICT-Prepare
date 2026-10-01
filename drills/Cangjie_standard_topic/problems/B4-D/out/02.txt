@@ -1,0 +1,3 @@
+first=none
+count=0
+sum=0

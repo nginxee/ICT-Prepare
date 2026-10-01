@@ -1,0 +1,10 @@
+open A
+use A
+close A
+open B
+close B
+caught B
+open C
+use C
+close C
+count=3

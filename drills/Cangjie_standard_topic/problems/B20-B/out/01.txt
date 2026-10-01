@@ -1,0 +1,3 @@
+final=40
+checksum=780
+threads=4

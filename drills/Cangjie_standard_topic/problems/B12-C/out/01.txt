@@ -1,0 +1,4 @@
+name=a
+nick=none
+nickLen=0
+hasNick=false

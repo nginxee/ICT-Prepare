@@ -1,0 +1,4 @@
+asFloat=100.0
+asInt=99
+asBool=false
+sum=199.9

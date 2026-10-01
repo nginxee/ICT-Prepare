@@ -1,0 +1,4 @@
+3
+rect 1000 1000
+rect 1 2
+square 3

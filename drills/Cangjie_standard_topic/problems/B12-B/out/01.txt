@@ -1,0 +1,2 @@
+shape=DOT
+area=0

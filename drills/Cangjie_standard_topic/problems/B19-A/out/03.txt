@@ -1,0 +1,4 @@
+bad q
+ok -100
+bad ab12
+done 3

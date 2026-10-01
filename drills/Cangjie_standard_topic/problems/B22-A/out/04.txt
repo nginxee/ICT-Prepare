@@ -1,0 +1,4 @@
+members=price,stock,title
+title=q
+stock=999
+stock2=1000

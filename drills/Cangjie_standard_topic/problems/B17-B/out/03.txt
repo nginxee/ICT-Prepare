@@ -1,0 +1,4 @@
+count=4
+sum=10
+first=1
+has=true

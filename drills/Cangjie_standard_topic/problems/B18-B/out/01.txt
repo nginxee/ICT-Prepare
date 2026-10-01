@@ -1,0 +1,5 @@
+m file
+n file
+o file
+sub0 dir
+files=3 dirs=1 totalBytes=3

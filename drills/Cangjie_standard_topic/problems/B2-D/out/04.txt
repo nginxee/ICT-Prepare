@@ -1,0 +1,4 @@
+asFloat=-1000000.0
+asInt=0
+asBool=none
+sum=-999999.1
