@@ -213,6 +213,9 @@ function Invoke-Cjc([string]$srcPath, [string]$exePath) {
     $psi.RedirectStandardOutput = $true
     $psi.RedirectStandardError  = $true
     $psi.UseShellExecute        = $false
+    # Compile inside the per-run dir so cjc's package-named intermediates do not
+    # land in the repo folder or collide between runs.
+    $psi.WorkingDirectory       = (Split-Path -Parent $exePath)
     $psi.CreateNoWindow         = $true
     # cjc writes its diagnostics in the SYSTEM ANSI codepage (936 here), NOT in
     # UTF-8. Decoding them as UTF-8 turns any Chinese character inside a
@@ -246,8 +249,12 @@ function Test-Problem([string]$probId, [string]$srcPath) {
         $script:FailCount++; return $false
     }
 
-    $exe = Join-Path $BuildRoot "$probId.exe"
-    if (Test-Path $exe) { Remove-Item $exe -Force -ErrorAction SilentlyContinue }
+    # Unique build dir per judged problem: a shared folder collides when two runs
+    # overlap or a stale run still holds a handle (cjc also drops package-named
+    # intermediates such as default.cjo into its working directory).
+    $runDir = Join-Path $BuildRoot ("run-" + $probId + "-" + [System.Guid]::NewGuid().ToString('N'))
+    if (-not (Test-Path $runDir)) { New-Item -ItemType Directory -Path $runDir -Force | Out-Null }
+    $exe = Join-Path $runDir "$probId.exe"
 
     Write-Host (T 'compiling') -ForegroundColor DarkGray
     $r = Invoke-Cjc -srcPath $srcPath -exePath $exe
@@ -256,7 +263,9 @@ function Test-Problem([string]$probId, [string]$srcPath) {
         Write-Host (T 'compileFailed') -ForegroundColor Red
         Write-Host ''
         Write-Host $cjcMsg.TrimEnd() -ForegroundColor Gray
-        $script:FailCount++; return $false
+        $script:FailCount++
+        Remove-Item $runDir -Recurse -Force -ErrorAction SilentlyContinue
+        return $false
     }
     if ($cjcMsg.Trim()) {
         Write-Host (T 'compileWarn') -ForegroundColor DarkYellow
@@ -313,6 +322,7 @@ function Test-Problem([string]$probId, [string]$srcPath) {
         Write-Host (T 'notPass') -ForegroundColor Red
         $script:FailCount++
     }
+    Remove-Item $runDir -Recurse -Force -ErrorAction SilentlyContinue
     return $allOk
 }
 

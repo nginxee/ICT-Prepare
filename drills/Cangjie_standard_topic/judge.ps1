@@ -229,7 +229,9 @@ function Invoke-Cjc([string]$srcPath, [string]$exePath, [string]$ExtraFlags = ''
     # extra cjc switches (e.g. --compile-macro for macro-package problems).
     if ($ExtraFlags) { $cargs = $ExtraFlags + ' ' + $cargs }
     $psi.Arguments              = $cargs
-    $psi.WorkingDirectory       = $BuildRoot
+    # Compile inside the per-run dir (see Test-Problem): keeps cjc's
+    # package-named intermediates from colliding between runs.
+    $psi.WorkingDirectory       = (Split-Path -Parent $exePath)
     $psi.RedirectStandardOutput = $true
     $psi.RedirectStandardError  = $true
     $psi.UseShellExecute        = $false
@@ -279,8 +281,13 @@ function Test-Problem([string]$probId, [string]$srcPath) {
     }
     if (Test-Path $flagsFile) { $extraFlags = (Get-Content $flagsFile -Raw).Trim() }
 
-    $exe = Join-Path $BuildRoot "$probId.exe"
-    if (Test-Path $exe) { Remove-Item $exe -Force -ErrorAction SilentlyContinue }
+    # Unique build dir per judged problem. A shared dir breaks when two runs
+    # overlap or a stale run holds a handle: cjc also drops intermediates named
+    # after the package (default.cjo) into its working directory, so fixed names
+    # collide and the link step dies with "failed to write the output file".
+    $runDir = Join-Path $BuildRoot ("run-" + $probId + "-" + [System.Guid]::NewGuid().ToString('N'))
+    if (-not (Test-Path $runDir)) { New-Item -ItemType Directory -Path $runDir -Force | Out-Null }
+    $exe = Join-Path $runDir "$probId.exe"
 
     Write-Host (T 'compiling') -ForegroundColor DarkGray
     $r = Invoke-Cjc -srcPath $srcPath -exePath $exe -ExtraFlags $extraFlags -CompileOnly:$compileOnly
@@ -290,7 +297,9 @@ function Test-Problem([string]$probId, [string]$srcPath) {
         Write-Host (T 'compileFailed') -ForegroundColor Red
         Write-Host ''
         Write-Host $cjcMsg.TrimEnd() -ForegroundColor Gray
-        $script:FailCount++; return $false
+        $script:FailCount++
+        Remove-Item $runDir -Recurse -Force -ErrorAction SilentlyContinue
+        return $false
     }
     if ($cjcMsg.Trim()) {
         Write-Host (T 'compileWarn') -ForegroundColor DarkYellow
@@ -353,6 +362,7 @@ function Test-Problem([string]$probId, [string]$srcPath) {
         Write-Host (T 'notPass') -ForegroundColor Red
         $script:FailCount++
     }
+    Remove-Item $runDir -Recurse -Force -ErrorAction SilentlyContinue
     return $allOk
 }
 
