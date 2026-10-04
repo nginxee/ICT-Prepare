@@ -249,6 +249,11 @@ function Test-Problem([string]$probId, [string]$srcPath) {
         $script:FailCount++; return $false
     }
 
+    # cjc runs inside the per-run build dir, so resolve -Source against THIS
+    # directory first -- otherwise a relative path (documented for cross-testing)
+    # reaches cjc as a path that does not exist there and looks like a compile error.
+    try { $srcPath = (Resolve-Path -LiteralPath $srcPath).Path } catch { }
+
     # Unique build dir per judged problem: a shared folder collides when two runs
     # overlap or a stale run still holds a handle (cjc also drops package-named
     # intermediates such as default.cjo into its working directory).

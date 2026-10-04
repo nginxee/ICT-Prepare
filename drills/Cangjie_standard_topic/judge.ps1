@@ -268,6 +268,11 @@ function Test-Problem([string]$probId, [string]$srcPath) {
         $script:FailCount++; return $false
     }
 
+    # cjc runs inside the per-run build dir, so resolve -Source against THIS
+    # directory first -- otherwise a relative path (documented for cross-testing)
+    # reaches cjc as a path that does not exist there and looks like a compile error.
+    try { $srcPath = (Resolve-Path -LiteralPath $srcPath).Path } catch { }
+
     # Extension over the original harness: optional per-problem compile controls.
     #   mode.txt  = compile-only   -> no executable / no cases; compiling = passing
     #   flags.txt                  -> extra cjc switches (e.g. --compile-macro)
