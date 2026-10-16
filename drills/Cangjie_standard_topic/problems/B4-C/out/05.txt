@@ -1,0 +1,2 @@
+folds=4
+thickness=16

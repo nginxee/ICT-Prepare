@@ -1,0 +1,8 @@
+file=all.txt
+ext=txt
+lines=4
+pass=3
+fail=1
+total=280
+failBytes=5
+cleaned=true

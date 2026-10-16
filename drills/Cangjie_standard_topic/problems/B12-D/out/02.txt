@@ -1,0 +1,7 @@
+x A
+y B
+z C
+z=C
+x=A
+nobody=NOTFOUND
+pass=2

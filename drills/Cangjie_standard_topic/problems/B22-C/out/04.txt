@@ -1,0 +1,4 @@
+tokens=13
+lparen=3
+add=2
+mul=1

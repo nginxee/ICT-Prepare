@@ -1,0 +1,4 @@
+asFloat=-3.0
+asInt=2
+asBool=none
+sum=-0.5

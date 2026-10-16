@@ -1,0 +1,4 @@
+square=7 的平方是 49
+sum=7 + -3 = 4
+word=hello
+upper=HELLO

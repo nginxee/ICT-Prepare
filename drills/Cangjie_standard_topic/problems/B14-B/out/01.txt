@@ -1,0 +1,4 @@
+add=7
+mul=10
+chain=12
+local=11

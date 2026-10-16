@@ -1,0 +1,6 @@
+once=100
+repeat=100
+shadow=-93
+global=100
+sumTo=1
+final=108

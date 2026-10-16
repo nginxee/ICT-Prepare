@@ -1,0 +1,2 @@
+action=GO
+seconds=25

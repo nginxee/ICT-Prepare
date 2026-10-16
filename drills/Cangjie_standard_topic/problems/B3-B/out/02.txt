@@ -1,0 +1,5 @@
+sorted=false
+inRange=false
+allEqual=false
+hasZero=true
+strictMax=false

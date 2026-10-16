@@ -1,0 +1,3 @@
+chars=5
+bytes=5
+upper=HELLO

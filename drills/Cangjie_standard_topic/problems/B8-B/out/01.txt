@@ -1,0 +1,6 @@
+first=78
+last=28
+min=21
+max=78
+sum=127
+avg=42.33

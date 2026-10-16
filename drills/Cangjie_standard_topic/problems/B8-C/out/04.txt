@@ -1,0 +1,6 @@
+chars=4
+bytes=12
+x=0
+pos=-1
+replaced=汉字汉字
+trimmed=汉字汉字

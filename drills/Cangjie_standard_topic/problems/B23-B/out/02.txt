@@ -1,0 +1,6 @@
+count=4
+total=278
+avg=69
+pass=2
+best=d
+list=d:100,b:60,a:59,c:59

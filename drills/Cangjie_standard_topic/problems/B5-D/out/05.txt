@@ -1,0 +1,6 @@
+once=3
+repeat=27
+shadow=8
+global=100
+sumTo=6
+final=141

@@ -1,0 +1,4 @@
+zzz..... 63 C
+top=zzz
+avg=63.00
+spread=0.00

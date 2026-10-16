@@ -1,0 +1,3 @@
+fact=1
+fib=1
+gcd=1

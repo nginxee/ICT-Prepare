@@ -1,0 +1,5 @@
+total=30
+after=60
+workers=2
+stage1sum=30
+consistent=true

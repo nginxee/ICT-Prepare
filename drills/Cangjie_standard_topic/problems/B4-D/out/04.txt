@@ -1,0 +1,3 @@
+first=9999
+count=1
+sum=9999

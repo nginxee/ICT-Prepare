@@ -1,0 +1,22 @@
+package default
+//Import
+import std.env.getStdIn
+import std.convert.Parsable
+//=====================
+
+// Lambda & functions
+let catchInput = {=>getStdIn().readln().getOrThrow()}
+
+main()
+{
+/*  Input
+    
+*/
+
+
+
+/*  Execute & Output
+    
+*/
+    return 0
+}

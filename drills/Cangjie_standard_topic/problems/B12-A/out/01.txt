@@ -1,0 +1,2 @@
+action=WAIT
+seconds=3

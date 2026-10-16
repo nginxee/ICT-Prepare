@@ -1,0 +1,7 @@
+and=0
+or=0
+xor=0
+not=-1
+shl=0
+shr=0
+packed=0

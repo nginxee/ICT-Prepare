@@ -1,0 +1,3 @@
+max=7
+absSum=15
+bothEven=false

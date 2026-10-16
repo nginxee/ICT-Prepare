@@ -1,0 +1,4 @@
+rect w=1000 h=1000 area=1000000
+rect w=1 h=2 area=2
+square s=3 area=9
+rect=2 square=1 rectWidth=1001

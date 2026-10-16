@@ -1,0 +1,3 @@
+double=20
+square=100
+neg=-10

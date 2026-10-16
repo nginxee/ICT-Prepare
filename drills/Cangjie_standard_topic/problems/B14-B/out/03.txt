@@ -1,0 +1,4 @@
+add=11
+mul=10
+chain=20
+local=3

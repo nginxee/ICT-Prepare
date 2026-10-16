@@ -1,0 +1,5 @@
+sum=(0,4)
+neg=(0,-4)
+scaled=(0,8)
+shifted=(3,7)
+origin=(0,4)

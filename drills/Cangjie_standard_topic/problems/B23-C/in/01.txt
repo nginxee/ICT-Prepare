@@ -1,0 +1,6 @@
+5
+add zoe art 70
+add ann art 70
+top art
+del ann art
+top art

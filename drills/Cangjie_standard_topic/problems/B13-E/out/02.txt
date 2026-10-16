@@ -1,0 +1,4 @@
+0: WORD a
+1: WORD bb
+ints=0 sum=0 words=2
+longest=bb

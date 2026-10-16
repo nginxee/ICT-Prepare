@@ -1,0 +1,3 @@
+== Hi, a == fail
+== Hi, b == pass
+== Hi, c == pass

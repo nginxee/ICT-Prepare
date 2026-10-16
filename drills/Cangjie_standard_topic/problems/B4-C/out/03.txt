@@ -1,0 +1,2 @@
+folds=10
+thickness=1024

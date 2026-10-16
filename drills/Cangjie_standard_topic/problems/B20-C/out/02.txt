@@ -1,0 +1,3 @@
+counter=1600
+threads=8
+consistent=true

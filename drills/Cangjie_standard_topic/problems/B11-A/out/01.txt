@@ -1,0 +1,3 @@
+circle area=3
+box area=1
+total=4

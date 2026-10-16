@@ -1,0 +1,3 @@
+0 PLUS
+1 MINUS
+2 STAR

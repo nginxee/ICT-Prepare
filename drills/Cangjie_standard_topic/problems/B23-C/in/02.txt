@@ -1,0 +1,5 @@
+4
+add a math 100
+add a art 100
+report
+report

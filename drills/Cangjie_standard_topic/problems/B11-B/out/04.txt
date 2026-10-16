@@ -1,0 +1,3 @@
+cash fee=0 total=999999
+card fee=0 total=0
+feeSum=0

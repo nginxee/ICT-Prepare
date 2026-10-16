@@ -1,0 +1,3 @@
+circle area=300
+box area=10000
+total=10300

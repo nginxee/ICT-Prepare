@@ -1,0 +1,4 @@
+1: 100
+sum=100
+cancelled=1
+first=Some(100)

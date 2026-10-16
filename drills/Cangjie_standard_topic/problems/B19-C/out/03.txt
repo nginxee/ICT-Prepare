@@ -1,0 +1,7 @@
+open P
+close P
+caught P
+open Q
+close Q
+caught Q
+count=2

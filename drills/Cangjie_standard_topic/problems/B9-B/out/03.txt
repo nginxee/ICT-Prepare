@@ -1,0 +1,2 @@
+ok balance=0
+fail balance=0

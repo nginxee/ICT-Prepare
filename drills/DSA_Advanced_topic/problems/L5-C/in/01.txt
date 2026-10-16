@@ -1,0 +1,6 @@
+5
+tom 88
+amy 95
+bob 88
+cat 70
+dan 95

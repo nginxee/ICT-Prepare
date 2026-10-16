@@ -1,0 +1,3 @@
+counter=80
+threads=4
+consistent=true

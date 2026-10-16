@@ -1,0 +1,3 @@
+chars=6
+bytes=6
+upper=ABC123

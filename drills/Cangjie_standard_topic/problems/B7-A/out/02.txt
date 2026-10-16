@@ -1,0 +1,4 @@
+name=x count=1000000
+name=y count=1
+name=zz count=999999
+total=2000000

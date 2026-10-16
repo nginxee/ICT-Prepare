@@ -1,0 +1,7 @@
+q 100 A
+w 80 B
+e 79 C
+r 100 A
+average=89
+top=q 100
+pass=4
