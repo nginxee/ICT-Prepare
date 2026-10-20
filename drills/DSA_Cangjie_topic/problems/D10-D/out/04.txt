@@ -1,0 +1,5 @@
+4
+a 2 a a
+ab 2 ab ba
+abc 3 abc bca cab
+b 1 b

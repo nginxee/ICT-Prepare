@@ -1,0 +1,4 @@
+3
+abc 11 abc abc bca bca bca bca cab cab cab cab cab
+aet 12 ate ate ate ate ate ate ate eat eat eat eat tea
+ant 7 nat nat nat tan tan tan tan

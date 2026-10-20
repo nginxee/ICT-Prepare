@@ -1,0 +1,4 @@
+sumsq=49
+sum=-7
+avg=-3
+big=1

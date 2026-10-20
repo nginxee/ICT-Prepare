@@ -1,0 +1,19 @@
+{
+    "version": "0.0.1",
+    "project": "Cangjie",
+    "taskConfig": {
+        "version": "0.0.1",
+        "tasks": []
+    },
+    "configurations": [
+        {
+            "name": "Cangjie: launch",
+            "request": "launch",
+            "type": "cangjieDebug",
+            "externalConsole": false,
+            "buildBeforeLaunch": true,
+            "env": {},
+            "program": "c:\\Users\\admin.PC-20241201YZZW\\Desktop\\ICT\\drills\\DSA_Cangjie_topic\\answers\\default\\target\\debug\\bin\\main.exe"
+        }
+    ]
+}

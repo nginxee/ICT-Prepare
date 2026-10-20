@@ -1,0 +1,5 @@
+4
+POP
+FRONT
+EMPTY
+SIZE

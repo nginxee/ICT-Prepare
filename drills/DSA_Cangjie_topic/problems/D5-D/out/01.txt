@@ -1,0 +1,4 @@
+len=5
+mid=2
+cycle=0
+entry=-1

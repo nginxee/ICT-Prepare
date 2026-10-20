@@ -1,0 +1,4 @@
+first=-1
+last=-1
+count=0
+maxgap=0

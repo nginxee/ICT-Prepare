@@ -1,0 +1,4 @@
+sumsq=55
+sum=3
+avg=0
+big=2

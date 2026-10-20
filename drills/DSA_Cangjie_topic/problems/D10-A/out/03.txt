@@ -1,0 +1,12 @@
+ask 3
+at 1
+be 5
+bee 9
+eat 5
+err 7
+go 2
+its 3
+red 3
+sit 2
+tea 4
+to 6

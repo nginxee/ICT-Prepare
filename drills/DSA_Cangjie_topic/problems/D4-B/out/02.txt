@@ -1,0 +1,6 @@
+OK
+FULL
+7
+EMPTY
+OK
+left=9

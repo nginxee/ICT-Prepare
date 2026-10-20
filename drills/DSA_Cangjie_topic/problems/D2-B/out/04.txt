@@ -1,0 +1,3 @@
+kept=1000000000 0
+size=2
+removed=4

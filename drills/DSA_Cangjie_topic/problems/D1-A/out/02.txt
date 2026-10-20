@@ -1,0 +1,4 @@
+sum=0
+max=0
+min=0
+neg=0

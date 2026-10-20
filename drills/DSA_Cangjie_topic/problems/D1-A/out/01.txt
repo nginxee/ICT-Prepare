@@ -1,0 +1,4 @@
+sum=1
+max=4
+min=-5
+neg=2

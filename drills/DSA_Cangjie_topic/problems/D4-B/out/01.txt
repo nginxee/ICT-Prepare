@@ -1,0 +1,7 @@
+OK
+OK
+1
+OK
+OK
+FULL
+left=2 3 4

@@ -1,0 +1,3 @@
+rev=7
+swaps=0
+same=0

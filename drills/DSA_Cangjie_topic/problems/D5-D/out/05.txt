@@ -1,0 +1,4 @@
+len=200000
+mid=-1
+cycle=1
+entry=150029

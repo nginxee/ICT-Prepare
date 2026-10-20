@@ -1,0 +1,5 @@
+green 8
+blue 6
+cyan 6
+pink 6
+red 4

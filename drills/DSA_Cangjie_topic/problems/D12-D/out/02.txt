@@ -1,0 +1,3 @@
+isBST=YES
+N - -
+N - -

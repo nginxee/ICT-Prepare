@@ -1,0 +1,4 @@
+first=5
+last=82
+count=12
+maxgap=38
